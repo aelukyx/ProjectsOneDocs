@@ -1,0 +1,79 @@
+﻿@model Thc.Web.Models.LoginModel
+
+@{
+    ViewBag.Title = "Iniciar Sesión";
+}
+
+
+
+<section id="loginForm">
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+<div style="padding:0px 30px 0px 0px">
+   <div class="panel panel-success">
+      <div class="panel-heading">
+        <hgroup class="title">
+            <p><h1>Iniciar Sesión</h1></p>
+        </hgroup>
+      </div>
+      <div class="panel-body">
+        <fieldset>
+        <legend>Formulario de inicio de sesión</legend>
+        <table style="width:100%">
+            <tr>
+                <td style="width:40%; color:#497699">
+                @Html.Label("Nombre de Usuario : ")
+                </td>
+                <td style="width:60%">
+                <p>@Html.TextBoxFor(m => m.UserName)</p>
+                <p>@Html.ValidationMessageFor(m => m.UserName)</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="color:#497699">
+                @Html.Label("Contraseña : ")
+                </td>
+                <td>
+                <p>@Html.PasswordFor(m => m.Password)</p>
+                <p>@Html.ValidationMessageFor(m => m.Password)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td style="color:#5c8096 ">
+                <p>@Html.CheckBoxFor(m => m.RememberMe)
+                   @Html.Label("¿Recordar Cuenta?")</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <p>
+                        <button type="submit" value="Iniciar sesión"  class="btn btn-success">Iniciar Sesión</button>
+                        &nbsp;&nbsp;<a href="@Url.Action("Register", "Account")" class="btn btn-primary" style="margin: auto; color: #ffffff;">
+                            Regístrese
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+      </div>
+    </div>
+</div>    
+    
+
+    
+}
+</section>
+
+<section class="social" id="socialLoginForm">
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

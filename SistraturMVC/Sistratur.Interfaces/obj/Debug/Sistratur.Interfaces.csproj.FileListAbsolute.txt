@@ -1,0 +1,14 @@
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\Sistratur.Interfaces.dll.config
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\Sistratur.Interfaces.dll
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\Sistratur.Interfaces.pdb
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\EntityFramework.dll
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\Sistratur.Models.dll
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\Sistratur.Models.pdb
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\EntityFramework.xml
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\obj\Debug\Sistratur.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\obj\Debug\Sistratur.Interfaces.dll
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\obj\Debug\Sistratur.Interfaces.pdb
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Interfaces\bin\Debug\es\EntityFramework.SqlServer.resources.dll

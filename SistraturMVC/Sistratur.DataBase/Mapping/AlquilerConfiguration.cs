@@ -18,17 +18,56 @@ namespace Sistratur.DataBase.Mapping
 
             ToTable("Alquiler", "dbo");
             HasKey(o => o.Id);
-            Property(o => o.FechaRegistro)
+
+            Property(o => o.FechaServicio)
+                .HasMaxLength(15)
                 .IsRequired();
-            Property(o => o.Observaciones)
+
+            Property(o => o.HoraServicio)
+                .HasMaxLength(15)
+                .IsRequired();
+
+            Property(o => o.LugarReferencia)
                 .HasMaxLength(200);
 
-            HasRequired(o => o.PerfilUsuario)
+            Property(o => o.Observaciones)
+                .IsOptional()
+                .HasMaxLength(200);
+
+
+            Property(o => o.FechaInicio)
+                .HasMaxLength(15)
+                .IsRequired();
+
+            Property(o => o.FechaFin)
+                .HasMaxLength(15)
+                .IsRequired();
+
+            Property(o => o.NroDias)
+                .IsRequired();
+
+            Property(o => o.Montodia)
+                .IsRequired()
+                .HasPrecision(5, 2);
+
+            Property(o => o.MontoTotal)
+                .IsRequired()
+                .HasPrecision(5, 2);
+
+            HasRequired(o => o.Conductor)
+                .WithMany(o => o.Alquiler)
+                .HasForeignKey(o => o.ConductorId);
+
+            HasRequired(o => o.Vehiculo)
+                .WithMany(o => o.Alquiler)
+                .HasForeignKey(o => o.VehiculoId);
+
+            HasOptional(o => o.PerfilUsuario)
                 .WithMany(o => o.Alquiler)
                 .HasForeignKey(o => o.PerfilUsuarioId);
 
             HasRequired(o => o.Cliente)
-                .WithMany(o => o.Alquileres)
+                .WithMany(o => o.Alquiler)
                 .HasForeignKey(o => o.ClienteId);
         }
     }

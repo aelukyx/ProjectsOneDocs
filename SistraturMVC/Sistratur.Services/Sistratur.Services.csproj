@@ -47,7 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AlquilerService.cs" />
+    <Compile Include="Services\ClienteService.cs" />
     <Compile Include="Services\ColorService.cs" />
+    <Compile Include="Services\ProveedorService.cs" />
+    <Compile Include="Services\VehiculoService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

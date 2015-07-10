@@ -1,0 +1,193 @@
+﻿@model IEnumerable<Sistratur.Models.Models.Alquiler>
+
+
+@{
+    ViewBag.Title = "Lista de Alquileres";
+}
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h1>Lista de Alquileres</h1>
+  </div>
+  <div class="panel-body">
+@*    <form method="GET" class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input type="text" name="buscar" class="form-control" size="60"/>
+        </div>&nbsp;&nbsp;&nbsp;
+        <button type="submit" class="btn btn-info">Buscar</button>
+    </form>*@
+    <div align="right">
+        <a href="@Url.Action("Create", "Alquiler")" class="btn btn-warning" style="margin: auto; color: #ffffff;">
+            Registrar Alquiler
+        </a>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <table class="table table-condensed table-striped">
+      <tr class="info text-primary" style="font-size:12.5px; text-align:center">
+        <th>
+            Cliente
+        </th>
+        <th>
+            Lugar Referencia
+        </th>
+        <th>
+            Conductor
+        </th>
+        <th>
+            Vehículo
+        </th>
+        <th>
+            Fechas
+        </th>
+        <th>
+            Nro. Dias
+        </th>
+        <th>
+            Monto x Día
+        </th>
+        <th>
+            Monto Total
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente.NombresRazonSocial) @Html.DisplayFor(modelItem => item.Cliente.AppPaterno) @Html.DisplayFor(modelItem => item.Cliente.AppMaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LugarReferencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Conductor.Nombres) @Html.DisplayFor(modelItem => item.Conductor.AppPaterno) @Html.DisplayFor(modelItem => item.Conductor.AppMaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vehiculo.Tipo.Descripcion) / @Html.DisplayFor(modelItem => item.Vehiculo.Placa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicio) @Html.DisplayFor(modelItem => item.FechaFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NroDias)
+        </td>
+        <td>
+            S/. @Html.DisplayFor(modelItem => item.Montodia)
+        </td>
+        <th>
+            S/. @Html.DisplayFor(modelItem => item.MontoTotal)
+        </th>
+
+    </tr>
+    }
+    </table>
+  </div>
+</div>
+
+
+
+
+@*@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaServicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraServicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LugarReferencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NroDias)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Montodia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MontoTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VehiculoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ConductorId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClienteId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerfilUsuarioId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaServicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraServicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LugarReferencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NroDias)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Montodia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MontoTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VehiculoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ConductorId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClienteId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerfilUsuarioId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>*@

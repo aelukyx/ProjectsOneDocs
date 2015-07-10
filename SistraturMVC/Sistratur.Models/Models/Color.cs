@@ -11,6 +11,12 @@ namespace Sistratur.Models.Models
 {
     public class Color
     {
+
+        public Color()
+        {
+            this.Vehiculos = new List<Vehiculo>();
+        }
+
         public int Id { get; set; }
         public String Descripcion { get; set; }
         public String Observaciones { get; set; }

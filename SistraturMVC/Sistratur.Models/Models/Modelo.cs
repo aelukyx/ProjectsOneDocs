@@ -8,6 +8,10 @@ namespace Sistratur.Models.Models
 {
     public class Modelo
     {
+        public Modelo()
+        {
+            this.Vehiculos = new List<Vehiculo>();
+        }
 
         public int Id { get; set; }
         public String Descripcion { get; set; }

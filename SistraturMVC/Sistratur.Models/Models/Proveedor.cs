@@ -16,7 +16,7 @@ namespace Sistratur.Models.Models
         public int Telefono { get; set; }
         public String Email { get; set; }
 
-        public int? CiudaId { get; set; }
+        public int? CiudadId { get; set; }
         public virtual Ciudad Ciudad { get; set; }
 
         public virtual ICollection<DetalleArticulo> DetallesArticulos { get; set; }

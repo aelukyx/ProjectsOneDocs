@@ -63,7 +63,6 @@
     <Compile Include="Mapping\ClienteConfiguration.cs" />
     <Compile Include="Mapping\ColorConfiguration.cs" />
     <Compile Include="Mapping\ConductorConfiguration.cs" />
-    <Compile Include="Mapping\DetalleAlquilerConfiguration.cs" />
     <Compile Include="Mapping\DetalleArticuloConfiguration.cs" />
     <Compile Include="Mapping\DetalleArticuloToVehiculoConfiguration.cs" />
     <Compile Include="Mapping\EstadoVehiculoConfiguration.cs" />

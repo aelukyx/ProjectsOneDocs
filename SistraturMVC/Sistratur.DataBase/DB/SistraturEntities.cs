@@ -25,7 +25,6 @@ namespace Sistratur.DataBase.DB
        public virtual IDbSet<Rol> Roles { get; set; }
        public virtual IDbSet<PerfilUsuario> PerfilesUsuarios { get; set; }
        public virtual IDbSet<Alquiler> Alquileres { get; set; }
-       public virtual IDbSet<DetalleAlquiler> DetallesAlquileres { get; set; }
        public virtual IDbSet<Conductor> Conductores { get; set; }
        public virtual IDbSet<Articulo> Articulos { get; set; }
        public virtual IDbSet<Categoria> Categorias { get; set; }
@@ -53,7 +52,6 @@ namespace Sistratur.DataBase.DB
            modelBuilder.Configurations.Add<Rol>(new RolConfiguration());
            modelBuilder.Configurations.Add<PerfilUsuario>(new PerfilUsuarioConfiguration());
            modelBuilder.Configurations.Add<Alquiler>(new AlquilerConfiguration());
-           modelBuilder.Configurations.Add<DetalleAlquiler>(new DetalleAlquilerConfiguration());
            modelBuilder.Configurations.Add<Conductor>(new ConductorConfiguration());
            modelBuilder.Configurations.Add<Articulo>(new ArticuloConfiguration());
            modelBuilder.Configurations.Add<Categoria>(new CategoriaConfiguration());

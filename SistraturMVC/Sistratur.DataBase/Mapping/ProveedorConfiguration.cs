@@ -40,7 +40,7 @@ namespace Sistratur.DataBase.Mapping
 
             HasRequired(o => o.Ciudad)
                 .WithMany(o => o.Proveedor)
-                .HasForeignKey(o => o.CiudaId);
+                .HasForeignKey(o => o.CiudadId);
 
 
         }

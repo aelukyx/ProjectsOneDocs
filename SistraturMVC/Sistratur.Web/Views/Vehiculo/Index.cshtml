@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Sistratur.Models.Models.Vehiculo>
+
+@{
+    ViewBag.Title = "Vehículos";
+}
+
+
+
+
+
+
+	<div class="row clearfix">
+		<div class="col-md-2 column">
+		</div>
+		<div class="col-md-8 column">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h1>Lista de Vehículos</h1>
+              </div>
+              <div class="panel-body">
+                <div align="right">
+                    <a href="@Url.Action("Create", "Vehiculo")" class="btn btn-warning" style="margin: auto; color: #ffffff;">
+                        Registrar Vehículo
+                    </a>
+                </div>
+              </div>
+              <div class="panel-body">
+                <table class="table table-condensed table-striped">
+                    <tr class="info text-primary" style="font-size:12.5px; text-align:center">
+                    <th>
+                    </th>
+                    <th>
+                    </th>
+                    <th>
+                        Placa
+                    </th>
+                    <th>
+                        Kilometraje
+                    </th>
+                    <th>
+                        Año
+                    </th>
+                    <th>
+                        Placa
+                    </th>
+                    <th>
+                        Marca
+                    </th>
+                    <th>
+                        Modelo
+                    </th>
+                    <th>
+                        Color
+                    </th>
+                    <th>
+                        Estado
+                    </th>
+                </tr>
+
+            @foreach (var item in Model) {
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Placa)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Kilometraje)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem=> item.Anio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem=> item.MarcaVehiculo.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Modelo.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Color.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tipo.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EstadoVehiculo.Descripcion)
+                    </td>
+                </tr>
+            }
+
+                </table>
+              </div>
+            </div>
+		</div>
+		<div class="col-md-2 column">
+		</div>
+	</div>

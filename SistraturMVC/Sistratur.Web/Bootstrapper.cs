@@ -28,6 +28,10 @@ namespace Sistratur.Web
       // e.g. container.RegisterType<ITestService, TestService>();    
 
       container.RegisterType<IColorService, ColorService>();
+      container.RegisterType<IClienteService, ClienteService>();
+      container.RegisterType<IAlquilerService, AlquilerService>();
+      container.RegisterType<IProveedorService, ProveedorService>();
+      container.RegisterType<IVehiculoService, VehiculoService>();
       RegisterTypes(container);
 
       return container;

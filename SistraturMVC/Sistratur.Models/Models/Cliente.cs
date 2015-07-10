@@ -4,10 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Sistratur.Models.Models
 {
     public class Cliente
     {
+        public Cliente()
+        {
+            this.Alquiler = new List<Alquiler>();
+        }
 
         public int Id { get; set; }
         public bool TipoDoc { get; set; }
@@ -22,7 +29,7 @@ namespace Sistratur.Models.Models
         public DateTime FechaRegistro { get; set; }
         public String Comentarios { get; set; }
 
-        public virtual ICollection<Alquiler> Alquileres { get; set; }
+        public virtual ICollection<Alquiler> Alquiler { get; set; }
 
     }
 }

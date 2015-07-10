@@ -13,6 +13,11 @@ namespace Sistratur.Models.Models
     public class Conductor
     {
 
+        public Conductor()
+        {
+            this.Alquiler = new List<Alquiler>();
+        }
+
         public int Id { get; set; }
         public String Dni { get; set; }
         public String Nombres { get; set; }
@@ -32,7 +37,7 @@ namespace Sistratur.Models.Models
         public bool Activo { get; set; }
         public String Observaciones { get; set; }
 
-        public virtual ICollection<DetalleAlquiler> DetallesAlquilers { get; set; }
+        public virtual ICollection<Alquiler> Alquiler { get; set; }
 
     }
 }

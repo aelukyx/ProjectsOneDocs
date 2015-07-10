@@ -53,7 +53,6 @@
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Color.cs" />
     <Compile Include="Models\Conductor.cs" />
-    <Compile Include="Models\DetalleAlquiler.cs" />
     <Compile Include="Models\DetalleArticulo.cs" />
     <Compile Include="Models\DetalleArticuloToVehiculo.cs" />
     <Compile Include="Models\EstadoVehiculo.cs" />

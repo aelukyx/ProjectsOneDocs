@@ -23,9 +23,6 @@ namespace Sistratur.DataBase.Mapping
             Property(o => o.Kilometraje)
                 .HasPrecision(9, 2);
             Property(o => o.Anio);
-            Property(o => o.MontoDia)
-                .HasPrecision(4, 2)
-                .IsOptional();
 
             HasRequired(o => o.EstadoVehiculo)
                 .WithMany(o => o.Vehiculos)

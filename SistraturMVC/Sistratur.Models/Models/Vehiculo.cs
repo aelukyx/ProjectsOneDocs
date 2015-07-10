@@ -8,12 +8,15 @@ namespace Sistratur.Models.Models
 {
     public class Vehiculo
     {
+        public Vehiculo()
+        {
+            this.Alquiler = new List<Alquiler>();
+        }
 
         public int Id { get; set; }
         public String Placa { get; set; }
         public Decimal Kilometraje { get; set; }
         public int Anio  { get; set; }
-        public Decimal MontoDia { get; set; }
 
         public int? EstadoVehiculoId { get; set; }
         public virtual EstadoVehiculo EstadoVehiculo { get; set; }
@@ -30,7 +33,7 @@ namespace Sistratur.Models.Models
         public int? TipoId { get; set; }
         public virtual Tipo Tipo { get; set; }
 
-        public virtual ICollection<DetalleAlquiler> DetallesAlquilers { get; set; }
+        public virtual ICollection<Alquiler> Alquiler { get; set; }
 
         public virtual ICollection<DetalleArticuloToVehiculo> DetallesArticulosToVehiculo { get; set; }
 

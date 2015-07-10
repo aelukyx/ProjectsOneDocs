@@ -1,0 +1,264 @@
+﻿@model Sistratur.Models.Models.Vehiculo
+
+@{
+    ViewBag.Title = "Crear Vehículo";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    
+	<div class="row clearfix">
+
+		<div class="col-md-1 column">
+		</div>
+		<div class="col-md-11 column">
+
+
+        <div class="panel panel-primary" style="width:85%">
+                      <div class="panel-heading">
+                        <b>Datos del Proveedor</b>
+                      </div>
+                        <div class="panel-body">
+
+	                    <div class="row clearfix">
+		                    <div class="col-md-5 column">
+
+                                <div class="editor-label">
+                                    @Html.Label("Placa")
+                                </div>
+                                <div class="editor-field">
+                                    <div class="input-group">
+                                      <div class="input-group-addon"><img src="~/Content/icons/placa-icon.png" width="18px"/></div>
+                                       @Html.TextBoxFor(model => model.Placa, new { style="width:204px"})
+                                    </div>
+                                   <p>
+                                    @Html.ValidationMessageFor(model => model.Placa)
+                                    </p>
+                                </div>
+
+                                <div class="editor-label">
+                                    @Html.Label("Kilometraje")
+                                </div>
+                                <div class="editor-field">
+                                    <div class="input-group">
+                                      <div class="input-group-addon"><img src="~/Content/icons/placa-icon.png" width="18px"/></div>
+                                       @Html.TextBoxFor(model => model.Kilometraje, new { style="width:204px"})
+                                    </div>
+                                   <p>
+                                    @Html.ValidationMessageFor(model => model.Kilometraje)
+                                    </p>
+                                </div>
+
+                                <div class="editor-label">
+                                    @Html.Label("Año")
+                                </div>
+                                <div class="editor-field">
+                                    <div class="input-group">
+                                      <div class="input-group-addon"><img src="~/Content/icons/placa-icon.png" width="18px"/></div>
+                                       @Html.TextBoxFor(model => model.Anio, new { style="width:204px"})
+                                    </div>
+                                   <p>
+                                    @Html.ValidationMessageFor(model => model.Anio)
+                                    </p>
+                                </div>
+
+
+
+
+                                <div class="editor-label">
+                                    @Html.Label("Tipo")
+                                </div>
+                                <div class="editor-field">
+                                    <div class="input-group" style="width:89%">
+                                      <div class="input-group-addon" style="width:0.009%"><img src="~/Content/icons/auto-icon.png" width="18px"/></div>
+                                        @Html.DropDownListFor(model => model.TipoId, (SelectList)ViewBag.UnidadId, new {@class="selectpicker"})
+                                    </div>
+                                    <p>
+                                    @Html.ValidationMessageFor(model => model.TipoId)
+                                    </p>
+                                </div>
+
+
+
+                            </div>
+		                    <div class="col-md-1 column">
+		                    </div>
+                            
+		                    <div class="col-md-6 column">
+                                <div class="editor-label">
+                                    @Html.Label("Marca")
+                                </div>
+                                <div class="editor-field">
+                                    <div class="input-group" style="width:89%">
+                                      <div class="input-group-addon" style="width:0.009%"><img src="~/Content/icons/estado-icon.png" width="18px"/></div>
+                                        @Html.DropDownListFor(model => model.MarcaVehiculoId, (SelectList)ViewBag.EstadoId, new {@class="selectpicker"})
+                                    </div>
+                                    <p>
+                                    @Html.ValidationMessageFor(model => model.MarcaVehiculoId)
+                                    </p>
+                                </div>
+
+                                <div class="editor-label">
+                                    @Html.Label("Modelo")
+                                </div>
+                                <div class="editor-field">
+                                    <div class="input-group" style="width:89%">
+                                      <div class="input-group-addon" style="width:0.009%"><img src="~/Content/icons/estado-icon.png" width="18px"/></div>
+                                        @Html.DropDownListFor(model => model.ModeloId, (SelectList)ViewBag.EstadoId, new {@class="selectpicker"})
+                                    </div>
+                                    <p>
+                                    @Html.ValidationMessageFor(model => model.ModeloId)
+                                    </p>
+                                </div>
+
+                                <div class="editor-label">
+                                    @Html.Label("Color")
+                                </div>
+                                <div class="editor-field">
+                                    <div class="input-group" style="width:89%">
+                                      <div class="input-group-addon" style="width:0.009%"><img src="~/Content/icons/estado-icon.png" width="18px"/></div>
+                                        @Html.DropDownListFor(model => model.ColorId, (SelectList)ViewBag.EstadoId, new {@class="selectpicker"})
+                                    </div>
+                                    <p>
+                                    @Html.ValidationMessageFor(model => model.ColorId)
+                                    </p>
+                                </div>
+
+                                <div class="editor-label">
+                                    @Html.Label("Estado")
+                                </div>
+                                <div class="editor-field">
+                                    <div class="input-group" style="width:89%">
+                                      <div class="input-group-addon" style="width:0.009%"><img src="~/Content/icons/estado-icon.png" width="18px"/></div>
+                                        @Html.DropDownListFor(model => model.EstadoVehiculoId, (SelectList)ViewBag.EstadoId, new {@class="selectpicker"})
+                                    </div>
+                                    <p>
+                                    @Html.ValidationMessageFor(model => model.EstadoVehiculoId)
+                                    </p>
+                                </div>
+
+
+		                    </div>
+
+                        </div>
+
+                        </div>
+                    </div>            
+
+
+		</div>
+	</div>
+        
+    <div class="row clearfix">
+	    <div class="col-md-11 column" style="text-align:center">
+            <p>
+                <button type="submit" class="btn btn-success">GRABAR</button>&nbsp;&nbsp;
+                <a href="@Url.Action("Index", "Proveedor")" class="btn btn-danger" style="margin: auto; color: #ffffff;">
+                    CANCELAR
+                </a>
+            </p>
+        </div>
+    </div>
+
+}
+
+<script src="~/Scripts/boot.js"></script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+@*@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Vehiculo</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Placa)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Placa)
+            @Html.ValidationMessageFor(model => model.Placa)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Kilometraje)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Kilometraje)
+            @Html.ValidationMessageFor(model => model.Kilometraje)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Anio)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Anio)
+            @Html.ValidationMessageFor(model => model.Anio)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EstadoVehiculoId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EstadoVehiculoId)
+            @Html.ValidationMessageFor(model => model.EstadoVehiculoId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MarcaVehiculoId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MarcaVehiculoId)
+            @Html.ValidationMessageFor(model => model.MarcaVehiculoId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ModeloId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ModeloId)
+            @Html.ValidationMessageFor(model => model.ModeloId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ColorId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ColorId)
+            @Html.ValidationMessageFor(model => model.ColorId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TipoId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TipoId)
+            @Html.ValidationMessageFor(model => model.TipoId)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

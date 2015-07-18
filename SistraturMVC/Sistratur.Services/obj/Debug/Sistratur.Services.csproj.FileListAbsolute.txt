@@ -16,3 +16,21 @@ C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Services\obj\Debug\Sistra
 C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Services\obj\Debug\Sistratur.Services.pdb
 C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\es\EntityFramework.resources.dll
 C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\Sistratur.Services.dll.config
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\Sistratur.Services.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\Sistratur.Services.pdb
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\EntityFramework.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\Sistratur.DataBase.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\Sistratur.Interfaces.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\Sistratur.Models.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\Sistratur.DataBase.pdb
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\Sistratur.Interfaces.pdb
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\Sistratur.Models.pdb
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\EntityFramework.xml
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\obj\Debug\Sistratur.Services.csprojResolveAssemblyReference.cache
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\obj\Debug\Sistratur.Services.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.Services\obj\Debug\Sistratur.Services.pdb

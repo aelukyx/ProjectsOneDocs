@@ -20,3 +20,25 @@ C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.DataBase\obj\Debug\Sistra
 C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.DataBase\obj\Debug\Sistratur.DataBase.pdb
 C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\es\EntityFramework.resources.dll
 C:\Users\AlexanderRaúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Sistratur.DataBase.dll.config
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Sistratur.DataBase.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Sistratur.DataBase.pdb
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\EntityFramework.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Sistratur.Interfaces.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Sistratur.Models.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Sistratur.Interfaces.pdb
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Sistratur.Models.pdb
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\EntityFramework.xml
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\obj\Debug\Sistratur.DataBase.csprojResolveAssemblyReference.cache
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\obj\Debug\Sistratur.DataBase.dll
+C:\Users\Alexander Raúl\Desktop\SistraturMVC\Sistratur.DataBase\obj\Debug\Sistratur.DataBase.pdb
